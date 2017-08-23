@@ -5,6 +5,7 @@
 \usepackage{opensans}
 \usepackage[light]{Chivo}
 \usepackage[T1]{fontenc}
+\usepackage[document]{ragged2e}
 
 \addtokomafont{firstnamefont}{\fontfamily{fos}\selectfont\scshape}
 
@@ -14,8 +15,8 @@
 \renewcommand*\familyname{H{\HUge ORLICK}}
 \renewcommand*\mobile{+44 7595 302 997}
 \renewcommand*\email{ruperthorlick@gmail.com}
-\renewcommand*\addressstreet{310 Coldhams Lane}
-\renewcommand*\addresscity{Cambridge, CB1 3HN}
+\renewcommand*\addressstreet{36 Hawthorn Road}
+\renewcommand*\addresscity{Godalming, UK, GU7 2NE}
 \renewcommand*\homepage{www.github.com/ruhatch}
 
 \renewcommand\mobilesymbol{\,}
@@ -32,19 +33,45 @@
 
   \maketitle
 
+  \justify
+  I am a Computer Scientist and Software Engineer with experience in functional
+  programming and its mathematical foundations. I would like to bring the
+  Computer Science perspective on distributed systems of information to new
+  fields including, but not limited to, biology, politics, and sociology.
+
+  \vspace{-2.5em}
+
   \section{Experience}
 
-    \cventry[1em]{Summer 2016}{Research Intern}{Microsoft Research Cambridge}{}{}{Worked under Simon Peyton-Jones on a project to add functions and rich data structures to Excel. I prototyped an interesting new data structure and prepared demos. The demos were presented to project managers in Redmond and were well received. I also worked on a refactoring project, which picked out common expressions in cells using anti-unification (a dual to unification), and extracted them into a new function.}
-    \cventry[1em]{Summer 2015}{Software Engineering Intern}{Money\&Co}{}{}{Automated a large Excel financial projection in Java, using object-oriented functors to handle dependencies between calculations. The software was deployed and is now used daily by a team of financial analysts.}
-    \cventry[1em]{Summer 2014}{Software Engineering Intern}{Money\&Co}{}{}{Rebuilt the company website from scratch using Bootstrap, HTML, jQuery, Less, and Java. I designed standards and templates to make the project maintainable and expandable.}
+    \cventry[1em]{Mar -- Sep 2017}{Software Development Engineer}{Myrtle
+      Software}{}{}{Started part-time while completing my
+      Masters degree and moved to full-time in June. Worked on compiling
+      neural networks to FPGAs, using modern tools such as the Haskell
+      programming language and the Nix build system. Joined as one of
+      three developers and quickly became a leading member as the team grew.}
+  
+    \cventry[1em]{Summer 2016}{Research Intern}{Microsoft Research
+      Cambridge}{}{}{Worked under Simon Peyton-Jones on a project to add
+      functions and rich data structures to Excel. Prototyped an interesting
+      new data structure and prepared demos. The demos were presented to project
+      managers in Redmond and were well received.}
+
+    \cventry[1em]{Summer 2014 \& 2015}{Software Engineering
+      Intern}{Money\&Co}{}{}{Automated a large Excel financial projection in
+      Java, using object-oriented functors to handle dependencies between
+      calculations. The software was deployed and is now used daily by a team of
+      financial analysts. Rebuilt the company website from scratch using
+      Bootstrap, HTML, jQuery, Less, and Java.}
+
+  \vspace{-3.5em}
 
   \section{Education}
 
-    \cventry[1em]{2016 -- 2017}{MEng Computer Science}{University of Cambridge}{}{Distinction (predicted)}{
-      Modules --- Category Theory, Multicore Semantics \& Programming, Advanced Functional Programming, A Mathematical Theory of Distributed Games and Strategies, and Interactive Formal Verification.\\[1em]
-      Masters Thesis --- Formalised the theory of Generalised Species in Homotopy Type Theory (HoTT) using Agda. In HoTT, types have an $\infty$-groupoid structure, so we developed the theory for groupoids internally, rather than building a Category Theory library.}
+    \cventry[1em]{2016 -- 2017}{MEng Computer Science}{University of Cambridge}{}{Distinction}{
+      Modules --- Category Theory, Multicore Semantics \& Programming, Advanced Functional Programming, Distributed Games \& Strategies, and Interactive Formal Verification.
+      Thesis --- Formalised the theory of Generalised Species in Homotopy Type Theory (HoTT) using Agda. In HoTT, types have an $\infty$-groupoid structure, so we developed the theory for groupoids internally, rather than building a Category Theory library.}
     \cventry[1em]{2013 -- 2016}{BA (Hons) Computer Science}{University of Cambridge}{}{1 (81\%, Rank: 8/81)}{Dissertation --- Built the Path ORAM cryptographic primitive in OCaml on MirageOS, to allow search over encrypted documents. I analysed the performance and security properties in the 10,000 word dissertation.}
-    \cventry{2007 -- 2012}{Secondary Education}{St. Paul's School}{}{}{
+    \cventry{2007 -- 2012}{High School}{St. Paul's School}{}{}{
     \begin{tabular}{@{}ll}
       A-Level & Computing --- A$^*$, Maths --- A$^*$, Further Maths --- A$^*$, Physics --- A$^*$ \\
       AS-Level & Chemistry --- A \\
@@ -52,22 +79,18 @@
     \end{tabular}
     }
 
-  \vspace{-1em}
+  \vspace{-3em}
 
   \section{Other}
 
     \cvdoubleitem{Technical Skills}{\small
       \begin{compactitem}
-        \item Haskell, ML, and OCaml
-        \item Java, C++, and C
-        \item git, Octave, and \LaTeX
-        \item HTML, CSS, and Javascript
-      \end{compactitem}}{Interests}{\small\vspace{-1.2em}
+        \item Haskell, OCaml, Nix, Java
+        \item git, Octave, \LaTeX
+      \end{compactitem}}{Qualifications}{\small\vspace{-1.2em}
       \begin{compactitem}
         \item CSIA Level 1 Ski Instructor
-        \item Bouldering
-        \item Mindfulness
-        \item Anarchist Theory
-      \end{compactitem}}
+        \item Grade 5 Drum Kit
+        \end{compactitem}}
 
 \end{document}
