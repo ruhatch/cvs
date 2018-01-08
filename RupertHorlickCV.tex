@@ -1,22 +1,21 @@
 \documentclass[DIV=15,color=DodgerBlue4]{komacv}
 
-%\usepackage{CormorantGaramond}
+% \usepackage{CormorantGaramond}
 \usepackage{quattrocento}
 \usepackage{opensans}
 \usepackage[light]{Chivo}
 \usepackage[T1]{fontenc}
-\usepackage[document]{ragged2e}
 
-\addtokomafont{firstnamefont}{\fontfamily{fos}\selectfont\scshape}
+% \addtokomafont{firstnamefont}{\fontfamily{fos}\selectfont\scshape}
 
-\newcommand\HUge{\fontsize{27}{60}\selectfont}
+\newcommand\HUge{\fontsize{19}{60}\selectfont}
 
 \renewcommand*\firstname{R{\HUge UPERT}\,}
 \renewcommand*\familyname{H{\HUge ORLICK}}
-\renewcommand*\mobile{+44 7595 302 997}
+\renewcommand*\mobile{+1 (778) 980-4817}
 \renewcommand*\email{ruperthorlick@gmail.com}
-\renewcommand*\addressstreet{36 Hawthorn Road}
-\renewcommand*\addresscity{Godalming, UK, GU7 2NE}
+\renewcommand*\addressstreet{4-2050 Vine Street}
+\renewcommand*\addresscity{Vancouver, BC, V6K 3K1}
 \renewcommand*\homepage{www.github.com/ruhatch}
 
 \renewcommand\mobilesymbol{\,}
@@ -31,6 +30,8 @@
 
 \begin{document}
 
+  \rmfamily
+
   \maketitle
 
   \justify
@@ -39,16 +40,27 @@
   Computer Science perspective on distributed systems of information to new
   fields including, but not limited to, biology, politics, and sociology.
 
-  \vspace{-2.5em}
+  \raggedright
+
+  \vspace{-0.5em}
 
   \section{Experience}
 
+    \cventry[1em]{Sep 2017 -- Present}{Lead Software
+      Developer}{Money\&Co}{}{}{The company had accrued large amount of
+      technical debt and brought me on to rebuild from scratch. Built new
+      infrastructure using Nix for reproducible builds. Used Haskell for the
+      server, the frontend, and the type-safe API for communicating between
+      the two. Used GHCJS to compile the frontend targeting the web with
+      Haskell. Had complete control over development, design
+      decisions, and my time.}
+
     \cventry[1em]{Mar -- Sep 2017}{Software Development Engineer}{Myrtle
-      Software}{}{}{Started part-time while completing my
-      Masters degree and moved to full-time in June. Worked on compiling
-      neural networks to FPGAs, using modern tools such as the Haskell
-      programming language and the Nix build system. Joined as one of
-      three developers and quickly became a leading member as the team grew.}
+      Software}{}{}{Started part-time during my Masters degree and moved to
+      full-time in June. Worked on compiling neural networks to FPGAs, using
+      modern tools such as Haskell and Nix. Joined as one of three developers
+      and became a leading member as the team grew. Was offered a senior
+      position, including responsibility for the team's productivity.}
   
     \cventry[1em]{Summer 2016}{Research Intern}{Microsoft Research
       Cambridge}{}{}{Worked under Simon Peyton-Jones on a project to add
@@ -56,22 +68,19 @@
       new data structure and prepared demos. The demos were presented to project
       managers in Redmond and were well received.}
 
-    \cventry[1em]{Summer 2014 \& 2015}{Software Engineering
-      Intern}{Money\&Co}{}{}{Automated a large Excel financial projection in
-      Java, using object-oriented functors to handle dependencies between
-      calculations. The software was deployed and is now used daily by a team of
-      financial analysts. Rebuilt the company website from scratch using
-      Bootstrap, HTML, jQuery, Less, and Java.}
-
-  \vspace{-3.5em}
+  \vspace{-1.5em}
 
   \section{Education}
 
     \cventry[1em]{2016 -- 2017}{MEng Computer Science}{University of Cambridge}{}{Distinction}{
-      Modules --- Category Theory, Multicore Semantics \& Programming, Advanced Functional Programming, Distributed Games \& Strategies, and Interactive Formal Verification.
-      Thesis --- Formalised the theory of Generalised Species in Homotopy Type Theory (HoTT) using Agda. In HoTT, types have an $\infty$-groupoid structure, so we developed the theory for groupoids internally, rather than building a Category Theory library.}
+      Thesis --- Formalised the theory of Generalised Species in Homotopy Type
+      Theory (HoTT) using Agda. Worked closely with leading researcher in the
+      field, who offered me a research position to continue working with him. \\
+      Modules --- Category Theory, Multicore Semantics \& Programming, Advanced
+      Functional Programming, Distributed Games \& Strategies, Interactive
+      Formal Verification.}
     \cventry[1em]{2013 -- 2016}{BA (Hons) Computer Science}{University of Cambridge}{}{1 (81\%, Rank: 8/81)}{Dissertation --- Built the Path ORAM cryptographic primitive in OCaml on MirageOS, to allow search over encrypted documents. I analysed the performance and security properties in the 10,000 word dissertation.}
-    \cventry{2007 -- 2012}{High School}{St. Paul's School}{}{}{
+    \cventry[1em]{2007 -- 2012}{High School}{St. Paul's School}{}{}{
     \begin{tabular}{@{}ll}
       A-Level & Computing --- A$^*$, Maths --- A$^*$, Further Maths --- A$^*$, Physics --- A$^*$ \\
       AS-Level & Chemistry --- A \\
@@ -79,7 +88,7 @@
     \end{tabular}
     }
 
-  \vspace{-3em}
+  \vspace{-1.5em}
 
   \section{Other}
 
