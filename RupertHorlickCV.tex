@@ -10,12 +10,12 @@
 
 \newcommand\HUge{\fontsize{19}{60}\selectfont}
 
-\renewcommand*\firstname{R{\HUge U}\,}
+\renewcommand*\firstname{R{\HUge UPERT}\,}
 \renewcommand*\familyname{H{\HUge ORLICK}}
 \renewcommand*\mobile{+447595302997}
 \renewcommand*\email{ruperthorlick@gmail.com}
-\renewcommand*\addressstreet{36 Hawthorn Road}
-\renewcommand*\addresscity{Godalming, United Kingdom, GU7 2NE}
+\renewcommand*\addressstreet{High Lea, Chatsworth Avenue}
+\renewcommand*\addresscity{Haslemere, United Kingdom, GU27 1BA}
 \renewcommand*\homepage{www.github.com/ruhatch}
 
 \renewcommand\mobilesymbol{\,}
@@ -23,7 +23,10 @@
 
 \setlength\dbitemmaincolwidth{12.4em}
 \setlength\aftertitlevspace{-2.5em}
-\setlength\hintscolwidth{0.15\textwidth}
+\setlength\hintscolwidth{0.11\textwidth}
+
+\addtokomafont{hintfont}{\footnotesize}
+\newcommand{\dates}[1]{\parbox[t]{\hintscolwidth}{\raggedleft #1}}
 
 \pagestyle{scrheadings}
 \clearscrheadfoot
@@ -44,59 +47,66 @@
   \vspace{-1em}
 
   \section{Experience}
-    \cventry[0.5em]{Dec 2020 -- Present}{Haskell Developer}{Stack
-      Builders}{}{}{Completed a three-month project to expose an API for an
-      existing software solution. Delivered to client's satisfaction on time and
-      on budget.}
+    \cventry[0.5em]{\dates{Jan 2024\\-- Present}}{Chief Techonology Officer}{Money\&Co}
+      {}{}{Took ownership of entire tech stack for FinTech platform. Migrated to
+      kubernetes on AWS, deploying through GitHub actions. This reduced downtime,
+      streamlined the development process, and made the whole system generally
+      more reliable.}
 
-    \cventry[0.5em]{June 2020 -- Dec 2020}{Senior Engineer}{Regen Network
+    \cventry[0.5em]{\dates{Jan 2022\\-- Present}}{Director and Facilitator}
+      {Climate Clarity CIC}{}{}{Founded and grew climate education start-up from
+      nothing to £200k revenue. Handled all aspects of business, from incorporation
+      to finance. Designed and built website, and evovled other tech systems to
+      support the businesses needs.}
+
+    \cventry[0.5em]{\dates{Dec 2020\\-- Jun 2021}}{Haskell Developer}{Stack
+      Builders}{}{}{Three-month project to exposing API for existing software
+      solution. Delivered on time and on budget.}
+
+    \cventry[0.5em]{\dates{Jun 2020\\-- Dec 2020}}{Senior Engineer}{Regen Network
       Development}{}{}{Spearheaded improvements in testing across the core Regen
       Ledger by adding property tests. Worked closely with CTO to design and
-      implement the core product, an ecocredit trading platform. Contributed to
-      community infrastructure of Cosmos SDK through bug fixing, code review,
-      and upstreaming useful libraries.}
+      implement an ecocredit trading platform.}
 
-    \cventry[0.5em]{May 2018 -- Sep 2019}{Senior Haskell
-      Developer}{IOHK}{}{}{Worked in a team of four to formalise, implement, and
-      property test ledger rules for the Cardano blockchain. Personally designed
-      and prototyped a hard-fork combinator to allow seamless transition across
-      major protocol updates. Also worked with Head of HR to run a trial of
-      Holacracy, a self-organising system, in the organisation. Personally,
-      facilitated and implemented Holacracy within the ledger team.}
+    \cventry[0.5em]{\dates{May 2018\\-- Sep 2019}}{Senior Haskell
+      Developer}{IOHK}{}{}{Formalised, implemented, and property tested ledger
+      rules for Cardano blockchain. Personally designed and prototyped a hard-fork
+      combinator to allow seamless transition across major protocol updates.}
 
-    \cventry[0.5em]{Sep 2017 -- May 2018}{Lead Software
-      Developer}{Money\&Co}{}{}{Rebuilt legacy Java codebase using Haskell and
-      Nix. Created type-safe APIs for communicating between back and frontends.
-      Used GHCJS to compile Haskell to Javascript for frontend. Had control over
-      software architecture and development.}
+    \cventry[0.5em]{\dates{Sep 2017\\-- May 2018}}{Lead Software
+      Developer}{Money\&Co}{}{}{Prototyped legacy Java codebase using Haskell and
+      Nix.}
 
-    \cventry[0.5em]{Mar -- Sep 2017}{Software Development Engineer}{Myrtle
+    \cventry[0.5em]{\dates{Mar 2017\\-- Sep 2017}}{Software Development Engineer}{Myrtle
       Software}{}{}{Worked on compiling neural networks to FPGAs, using
       Haskell and Nix. Was offered a senior position, including responsibility
       for team productivity.}
 
-    %\cventry[0.5em]{Summer 2016}{Research Intern}{Microsoft Research
-      %Cambridge}{}{}{Worked on a project adding functional features to Excel.
-      %Presented to managers in Redmond, convincing them to use our research in
-      %the next version of Excel.}
+  \vspace{-0.55em}
 
-  \vspace{-1em}
+  \section{Skills}
+
+    \cvdoubleitem{Programming Languages}{\small
+      \begin{compactitem}
+        \item Haskell, Rust, OCaml, Go
+        \item Javascript, Nix, Python, Java
+      \end{compactitem}}{Tools}{\small\vspace{-1.2em}
+      \begin{compactitem}
+        \item kubernetes, git, AWS
+        \item GitHub Actions, \LaTeX
+      \end{compactitem}}
+
+  \vspace{-0.55em}
 
   \section{Education}
 
-    \cventry[0.5em]{2016 -- 2017}{MEng Computer Science}{University of Cambridge}{}{Distinction}{
+    \cventry[0.5em]{\dates{2016\\-- 2017}}{MEng Computer Science}{University of Cambridge}{}{Distinction}{
       \textit{Thesis:} Formalised the theory of Generalised Species in Homotopy Type
-      Theory (HoTT) using Agda. Worked closely with leading researcher in the
-      field, who offered me a research position to continue our work. \\
-      \vspace{0.3em}
-      \textit{Modules:} Category Theory, Multicore Semantics \& Programming, Advanced
-      Functional Programming, Distributed Games \& Strategies, Interactive
-      Formal Verification.}
-    \cventry[0.5em]{2013 -- 2016}{BA Computer Science}{University of
+      Theory (HoTT) using Agda. Was offered research position to continue the work.}
+    \cventry[0.5em]{\dates{2013\\-- 2016}}{BA Computer Science}{University of
       Cambridge}{}{1st Class (81\%, Rank: 8/81)}{Implemented Path ORAM, a cryptographic
       primitive, in OCaml to search encrypted documents. Analysed performance
-      and security properties in a dissertation. Presented ideas to Microsoft
-      Research Cambridge.}
+      and security properties in a dissertation.}
 %    \cventry[0.5em]{2007 -- 2012}{High School}{St. Paul's School}{}{}{
 %    \begin{tabular}{@{}ll}
 %      A-Level & Computing --- A$^*$, Maths --- A$^*$, Further Maths --- A$^*$, Physics --- A$^*$ \\
@@ -105,18 +115,5 @@
 %    \end{tabular}
 %    }
 
-  \vspace{-1.2em}
-
-  \section{Other}
-
-    \cvdoubleitem{Programming Languages}{\small
-      \begin{compactitem}
-        \item Haskell, Rust, OCaml, Hoon
-        \item Javascript, Nix, Agda, Java
-      \end{compactitem}}{Tools}{\small\vspace{-1.2em}
-      \begin{compactitem}
-        \item Unix, git, NixOps
-        \item Octave, \LaTeX
-      \end{compactitem}}
 
 \end{document}
