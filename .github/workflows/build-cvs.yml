@@ -9,9 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build PDF
-         uses: BaseMax/github-actions-build-latex-pdf@v1
-         with:
-           tex_path: "RupertHorlickCV.tex"
+        uses: BaseMax/github-actions-build-latex-pdf@v1
+        with:
+          tex_path: "RupertHorlickCV.tex"
 
       - uses: actions/upload-artifact@v7
         with:
